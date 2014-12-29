@@ -6,7 +6,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.7/angular-route.min.js"></script>
     <script src="https://cdn.firebase.com/js/client/1.0.11/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/angularfire/0.7.1/angularfire.min.js"></script>
-    <script src="js/index.js?11"></script>
+
+    <!-- FireBase -->
+  <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/resources/tutorial/css/example.css">
   <link rel="stylesheet" href="css/style.css" />
       
       <!-- onsen ui -->
@@ -21,13 +25,16 @@
   <script src="lib/onsen/js/angular/angular.js"></script>    
       
   </head>
-  <body>
-  <header id="pg_head">
-    <h1>チャットっぽい何かを作ってみた</h1>
-  </header>
-  <div ng-view></div>
-  <fotter>
 
-  </fotter>
+  <body class="tetris-body example-base">
+  <div>
+    <canvas id="canvas0" width="250" height="500"></canvas>
+    <canvas id="canvas1" width="250" height="500"></canvas>
+  </div>
+  <input type="button" id="restartButton" value="Restart Game" class="hide" />
+  <div id="gameInProgress">Game is in progress.  You will automatically join if either player leaves.</div>
+
+  <script src="js/app.js"></script>
   </body>
+
 </html>
